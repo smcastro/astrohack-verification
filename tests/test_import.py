@@ -71,3 +71,5 @@ def test_import_dio_export_to_fits():
         from astrohack.dio import export_to_fits
     except ImportError:
         assert False
+        
+        
