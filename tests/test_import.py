@@ -1,5 +1,25 @@
 import pytest
 
+@classmethod
+def setup_class(cls):
+    """ setup any state specific to the execution of the given test class
+    such as fetching test data """
+    pass
+
+@classmethod
+def teardown_class(cls):
+    """ teardown any state that was previously setup with a call to setup_class
+    such as deleting test data """
+    pass
+
+def setup():
+    """ setup any state specific to all methods of the given class """
+    pass
+
+def teardown():
+    """ teardown any state that was previously setup for all methods of the given class """
+    pass
+
 def test_import_astrohack_client():
     try:
         from astrohack.astrohack_client import astrohack_local_client
