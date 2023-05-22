@@ -6,9 +6,9 @@ def test_import_astrohack_client():
     except ImportError:
         assert False
 
-def test_import_astrohack_holog():
+def test_import_extract_holog():
     try:
-        from astrohack.astrohack_holog import astrohack_holog
+        from astrohack.extract_holog import extract_holog
     except ImportError:
         assert False
 
